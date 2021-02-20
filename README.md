@@ -12,8 +12,8 @@ The Leon 3 soft core processor is developed by ESA and is maintained in the GRLI
 ## Setting up Linux
 For guest linux we need
 
-- VMware Workstation player, download it from [here]{https://my.vmware.com/en/web/vmware/downloads/details?downloadGroup=PLAYER-1610&productId=1039&rPId=55792}
-- Linux ubuntu iso image, downlaod it from [here]{https://ubuntu.com/download/desktop} 
+- VMware Workstation player, download it from [here](https://my.vmware.com/en/web/vmware/downloads/details?downloadGroup=PLAYER-1610&productId=1039&rPId=55792)
+- Linux ubuntu iso image, downlaod it from [here](https://ubuntu.com/download/desktop) 
 
 ## Instalations
 Installation of Quartus and ModelSIM
