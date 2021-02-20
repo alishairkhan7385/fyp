@@ -17,6 +17,7 @@ For guest linux we need
 
 ## Instalations
 Installation of Quartus and ModelSIM
+1. Extract with `tar xfv Quartus-lite-18.1.0.625-linux.tar`
 
 `code`
 
