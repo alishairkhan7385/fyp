@@ -2,9 +2,9 @@
 The Leon 3 soft core processor is developed by ESA and is maintained in the GRLIB library from the Cobham Gaisler AB. The GRLIB library contains a flexible makefile implementation to rapidly create custom ASICs by selecting modules within the library. Some of these components are IP blocks and are therefore only free-of-charge whenever it is not used commercially.
 
 ## Tools
-1- xilinx ise
-2- modelsim
-3- quartus lite
+- xilinx ise
+- modelsim
+- quartus lite
 
 
 GRLIB user guide https://www.gaisler.com/products/grlib/grlib.pdf
