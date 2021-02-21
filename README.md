@@ -30,10 +30,10 @@ Installation of Quartus and ModelSIM
 `libxt6:i386 libxtst6:i386`  
 There might be following error here  
 `E: Unable to locate package libpng12-0:i386`  
-To resolve it run following commands
-`sudo add-apt-repository ppa:linuxuprising/libpng12  
-sudo apt update  
-sudo apt install libpng12-0`
+To resolve it run following commands, also can check complete blog [here](https://www.linuxuprising.com/2018/05/fix-libpng12-0-missing-in-ubuntu-1804.html)
+`sudo add-apt-repository ppa:linuxuprising/libpng12`    
+`sudo apt update`    
+`sudo apt install libpng12-0`  
 6. Download the freetype library [here](http://download.savannah.gnu.org/releases/freetype/freetype-2.4.12.tar.bz2)  
 7. Unpack, build and copy to the appropriate directory.
 8. 
