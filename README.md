@@ -77,8 +77,8 @@ Follow the instructions section 3 in grlib.pdf. It basically boils down to the f
 1. Go to `home/test/Downloads/grlib-gpl-2018.3-b4226/designs/leon3-gr-xc3s-1500` directory and execute  
 `make install-altera`  
 2. Execute `make xconfig` to give design configuration. Here click on `VHDL debugging` and check yes for `Accelerated UART tracing`. GO back to main menu and click `Save and Exit`.
-Execute `make vsim` you might get this error
-`** Error: (vcom-11) Could not find unisim.ramb16_s36_s36.
+Execute `make vsim` you might get this error  
+` ** Error: (vcom-11) Could not find unisim.ramb16_s36_s36.
 ###### ../../lib/techmap/unisim/memory_unisim.vhd(36): use unisim.RAMB16_S36_S36;
 ** Error (suppressible): ../../lib/techmap/unisim/memory_unisim.vhd(36): (vcom-1195) Cannot find expanded name "unisim.RAMB16_S36_S36".
 ** Error: (vcom-11) Could not find unisim.ramb16_s36.
@@ -103,7 +103,7 @@ Execute `make vsim` you might get this error
 ** Error: ../../lib/techmap/unisim/memory_unisim.vhd(45): VHDL Compiler exiting
 make[1]: *** [make.vsim:51: vsim] Error 2
 make[1]: Leaving directory '/home/test/Downloads/grlib-gpl-2018.3-b4226/designs/leon3-gr-xc3s-1500'
-make: *** [../../bin/Makefile:370: make.work] Error 2`
+make: *** [../../bin/Makefile:370: make.work] Error 2 `  
 
 It means some VHDL packages are missing.
 3. To add these packages go to (in my case) `/home/void/Downloads/xilinx/14.7/ISE_DS/ISE/vhdl/src/unisims` copy `unisim_VCOMP.vhd`, `unisim_VPKG.vhd` and all `.vhd` packages in the `primitive` folder to `/home/test/Downloads/grlib-gpl-2018.3-b4226/lib/techmap/unisim`  
@@ -119,7 +119,8 @@ It means some VHDL packages are missing.
   main()
 {
 printf("\n\n Hello LEON3 World!!!\n");
-}```
+}
+```
 
 
 
