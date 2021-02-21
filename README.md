@@ -77,51 +77,30 @@ Follow the instructions section 3 in grlib.pdf. It basically boils down to the f
 1. Go to `home/test/Downloads/grlib-gpl-2018.3-b4226/designs/leon3-gr-xc3s-1500` directory and execute  
 `make install-altera`  
 2. Execute `make xconfig` to give design configuration. Here click on `VHDL debugging` and check yes for `Accelerated UART tracing`. GO back to main menu and click `Save and Exit`.
-Execute `make vsim` you might get this error  
-` ** Error: (vcom-11) Could not find unisim.ramb16_s36_s36.
-###### ../../lib/techmap/unisim/memory_unisim.vhd(36): use unisim.RAMB16_S36_S36;
-** Error (suppressible): ../../lib/techmap/unisim/memory_unisim.vhd(36): (vcom-1195) Cannot find expanded name "unisim.RAMB16_S36_S36".
-** Error: (vcom-11) Could not find unisim.ramb16_s36.
-###### ../../lib/techmap/unisim/memory_unisim.vhd(37): use unisim.RAMB16_S36;
-** Error (suppressible): ../../lib/techmap/unisim/memory_unisim.vhd(37): (vcom-1195) Cannot find expanded name "unisim.RAMB16_S36".
-** Error: (vcom-11) Could not find unisim.ramb16_s18.
-###### ../../lib/techmap/unisim/memory_unisim.vhd(38): use unisim.RAMB16_S18;
-** Error (suppressible): ../../lib/techmap/unisim/memory_unisim.vhd(38): (vcom-1195) Cannot find expanded name "unisim.RAMB16_S18".
-** Error: (vcom-11) Could not find unisim.ramb16_s9.
-###### ../../lib/techmap/unisim/memory_unisim.vhd(39): use unisim.RAMB16_S9;
-** Error (suppressible): ../../lib/techmap/unisim/memory_unisim.vhd(39): (vcom-1195) Cannot find expanded name "unisim.RAMB16_S9".
-** Error: (vcom-11) Could not find unisim.ramb16_s4.
-###### ../../lib/techmap/unisim/memory_unisim.vhd(40): use unisim.RAMB16_S4;
-** Error (suppressible): ../../lib/techmap/unisim/memory_unisim.vhd(40): (vcom-1195) Cannot find expanded name "unisim.RAMB16_S4".
-** Error: (vcom-11) Could not find unisim.ramb16_s2.
-###### ../../lib/techmap/unisim/memory_unisim.vhd(41): use unisim.RAMB16_S2;
-** Error (suppressible): ../../lib/techmap/unisim/memory_unisim.vhd(41): (vcom-1195) Cannot find expanded name "unisim.RAMB16_S2".
-** Error: (vcom-11) Could not find unisim.ramb16_s1.
-###### ../../lib/techmap/unisim/memory_unisim.vhd(42): use unisim.RAMB16_S1;
-** Error (suppressible): ../../lib/techmap/unisim/memory_unisim.vhd(42): (vcom-1195) Cannot find expanded name "unisim.RAMB16_S1".
-###### ../../lib/techmap/unisim/memory_unisim.vhd(45): entity unisim_syncram is
-** Error: ../../lib/techmap/unisim/memory_unisim.vhd(45): VHDL Compiler exiting
-make[1]: *** [make.vsim:51: vsim] Error 2
-make[1]: Leaving directory '/home/test/Downloads/grlib-gpl-2018.3-b4226/designs/leon3-gr-xc3s-1500'
-make: *** [../../bin/Makefile:370: make.work] Error 2 `  
+3. Execute `make vsim` you might get this error  
+  
 
 It means some VHDL packages are missing.
-3. To add these packages go to (in my case) `/home/void/Downloads/xilinx/14.7/ISE_DS/ISE/vhdl/src/unisims` copy `unisim_VCOMP.vhd`, `unisim_VPKG.vhd` and all `.vhd` packages in the `primitive` folder to `/home/test/Downloads/grlib-gpl-2018.3-b4226/lib/techmap/unisim`  
-4. Now execute 'make vsim-launch' to launch ModelSim.  
-5. To compile all those missing packages execute following commands in ModelSim Transcript.  
+4. To add these packages go to (in my case) `/home/void/Downloads/xilinx/14.7/ISE_DS/ISE/vhdl/src/unisims` copy `unisim_VCOMP.vhd`, `unisim_VPKG.vhd` and all `.vhd` packages in the `primitive` folder to `/home/test/Downloads/grlib-gpl-2018.3-b4226/lib/techmap/unisim`  
+5. Now execute 'make vsim-launch' to launch ModelSim.  
+6. To compile all those missing packages execute following commands in ModelSim Transcript.  
    `vcom -93 -explicit -reportprogress 300 -work unisim {/home/test/Downloads/grlib-gpl-2018.3-b4226/lib/techmap/unisim/unisim_VCOMP.vhd}`  
    `vcom -93 -explicit -reportprogress 300 -work unisim {/home/test/Downloads/grlib-gpl-2018.3-b4226/lib/techmap/unisim/unisim_VPKG.vhd}`  
    `vcom -93 -explicit -reportprogress 300 -work unisim {/home/test/Downloads/grlib-gpl-2018.3-b4226/lib/techmap/unisim/*.vhd}`  
-6. Now execute `make vsim` in ModelSim Transcript, this time there would be no errors for missing packages.
-7. Finally execute `make vsim-run` to run all and see the waveforms.
-8. To add c code to the simulations, go to systest.c file located in (in my case) `/home/test/Downloads/grlib-gpl-2018.3-b4226/designs/leon3-gr-xc3s-1500/systest.c` and add some c code in it, for example
+7. Now execute `make vsim` in ModelSim Transcript, this time there would be no errors for missing packages.  
+8. Finally execute `make vsim-run` to run all and see the waveforms.  
+9. To add c code to the simulations, go to systest.c file located in (in my case) `/home/test/Downloads/grlib-gpl-2018.3-b4226/designs/leon3-gr-xc3s-1500/systest.c` and add some c code in it, for example
   ``` c++
   main()
 {
 printf("\n\n Hello LEON3 World!!!\n");
 }
 ```
-
+10. Open terminal and execute `make soft`.  
+11. Run simulations again to see the c code ouput in the simulations by executing  
+  `make install-altera`  
+  `make vsim-run`
+Output in my case
 
 
 
