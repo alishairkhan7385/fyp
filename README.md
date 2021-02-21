@@ -19,7 +19,16 @@ For guest linux we need
 Installation of Quartus and ModelSIM
 1. Extract with `tar xfv Quartus-lite-18.1.0.625-linux.tar`
 2. Run the setup with `sh setup.sh`  
-  potential error
+3. Click through the installer, install the Cyclone IV and Cyclone V packages and make sure to install ModelSIM-Altera (the free version of ModelSIM)
+4. Install 32 bit libraries `sudo apt install gcc-multilib`
+5. Install some more libraries
+  `sudo apt-get install gcc-multilib g++-multilib \
+   lib32z1 lib32stdc++6 lib32gcc1 \   
+   expat:i386 fontconfig:i386 libfreetype6:i386 libexpat1:i386 libc6:i386 libgtk-3-0:i386 \
+   libcanberra0:i386 libpng12-0:i386 libice6:i386 libsm6:i386 libncurses5:i386 zlib1g:i386 \
+   libx11-6:i386 libxau6:i386 libxdmcp6:i386 libxext6:i386 libxft2:i386 libxrender1:i386 \
+   libxt6:i386 libxtst6:i386`
+
 
 `code`
 
