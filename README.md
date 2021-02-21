@@ -15,7 +15,7 @@ For guest linux we need
 - VMware Workstation player, download it from [here](https://my.vmware.com/en/web/vmware/downloads/details?downloadGroup=PLAYER-1610&productId=1039&rPId=55792)
 - Linux ubuntu iso image, downlaod it from [here](https://ubuntu.com/download/desktop) 
 
-## Instalations
+## Instalation of Quartus for ModelSim
 Installation of Quartus and ModelSIM
 1. Extract with `tar xfv Quartus-lite-18.1.0.625-linux.tar`
 2. Run the setup with `sh setup.sh`  
@@ -67,6 +67,10 @@ For simulations it is very handy to add the grlib library to your path as well:
  2. nano ~/.bashrc
  3. Paste the following at the bottom of that file, replace the path to your installation of the grlib library.  
  `export GRLIB=/path/to/grlib`
+
+## Instalation of Xilinx
+1. Download it from [here]{}
+2. Extract it and execute `sh xsetup` and do the installations.
 
 ## Installing Bare C compiler (BCC) for soft code compilation
 Download the zipped file from [gaisler](https://www.gaisler.com/anonftp/bcc/bin/linux/).Extract it and copy the file to /opt/ execute `sudo cp -r sparc-elf-3.4.4 /opt/`
