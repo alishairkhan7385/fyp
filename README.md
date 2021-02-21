@@ -54,18 +54,23 @@ Installation of Quartus and ModelSIM
 `export PATH=/opt/sparc-elf/bin:$PATH`   
 11. Re-open your terminal and edit your binary vsim launch file (if you are unsure where this is located type `which vsim`)
 change `mode=${MTI_VCO_MODE:-""}` to `mode=${MTI_VCO_MODE:-"32"}` add `export LD_LIBRARY_PATH=${dir}/lib32` below `dir=dirname "$arg0"` change `vco="linux_rh60"` to `vco="linux"`
-12. You should now be able to launch `quartus` by typing quartus and ModelSIM can be launched with `vsim`
+12. You should now be able to launch `quartus` by typing quartus and ModelSIM can be launched with `vsim`  
 For simulations it is very handy to add the grlib library to your path as well:
 
  1. Download grlib here
  2. nano ~/.bashrc
- 3. Paste the following at the bottom of that file, replace the path to your installation of the grlib library.
+ 3. Paste the following at the bottom of that file, replace the path to your installation of the grlib library.  
  `export GRLIB=/path/to/grlib`
 
 ## Installing Bare C compiler (BCC) for soft code compilation
 Download the zipped file from [gaisler](https://www.gaisler.com/anonftp/bcc/bin/linux/). copy the file to /opt/ execute `sudo tar xjf sparc-elf-GCCVERSION-RELEASE_VERSION.tar.gz`
 
+## Simulation
+Follow the instructions section 3 in grlib.pdf. It basically boils down to the following (assuming you have correctly cloned the git repository):
 
+1. First ensure the Altera libraries have been correctly merged with grlib: `make install-altera`
+2. Instantiate a new ModelSIM project: `make vsim`
+3. Then you can either launch the project with make vsim-launch or you can directly run a simulation with `make vsim-run`
 
 
 GRLIB user guide https://www.gaisler.com/products/grlib/grlib.pdf
