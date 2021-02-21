@@ -69,7 +69,7 @@ For simulations it is very handy to add the grlib library to your path as well:
  `export GRLIB=/path/to/grlib`
 
 ## Instalation of Xilinx
-1. Download it from [here]{}
+1. Download it from [here](https://thepiratebay.org/description.php?id=7421507)
 2. Extract it and execute `sh xsetup` and do the installations.
 
 ## Installing Bare C compiler (BCC) for soft code compilation
@@ -84,7 +84,7 @@ Follow the instructions section 3 in grlib.pdf. It basically boils down to the f
 3. Execute `make vsim` you might get this error  
   
 
-It means some VHDL packages are missing.
+It means some VHDL packages are missing.  
 4. To add these packages go to (in my case) `/home/void/Downloads/xilinx/14.7/ISE_DS/ISE/vhdl/src/unisims` copy `unisim_VCOMP.vhd`, `unisim_VPKG.vhd` and all `.vhd` packages in the `primitive` folder to `/home/test/Downloads/grlib-gpl-2018.3-b4226/lib/techmap/unisim`  
 5. Now execute 'make vsim-launch' to launch ModelSim.  
 6. To compile all those missing packages execute following commands in ModelSim Transcript.  
