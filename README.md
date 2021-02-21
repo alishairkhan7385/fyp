@@ -25,9 +25,15 @@ Installation of Quartus and ModelSIM
 `sudo apt-get install gcc-multilib g++-multilib`  
 `lib32z1 lib32stdc++6 lib32gcc1`  
 `expat:i386 fontconfig:i386 libfreetype6:i386 libexpat1:i386 libc6:i386 libgtk-3-0:i386`  
-`libcanberra0:i386 libpng12-0:i386 libice6:i386 libsm6:i386 libncurses5:i386 zlib1g:i386`  
+`libpng12-0:i386 libice6:i386 libsm6:i386 libncurses5:i386 zlib1g:i386`  
 `libx11-6:i386 libxau6:i386 libxdmcp6:i386 libxext6:i386 libxft2:i386 libxrender1:i386`  
 `libxt6:i386 libxtst6:i386`  
+There might be following error here  
+`E: Unable to locate package libpng12-0:i386`  
+To resolve it run following commands
+`sudo add-apt-repository ppa:linuxuprising/libpng12  
+sudo apt update  
+sudo apt install libpng12-0`
 6. Download the freetype library [here](http://download.savannah.gnu.org/releases/freetype/freetype-2.4.12.tar.bz2)  
 7. Unpack, build and copy to the appropriate directory.
 8. 
@@ -54,7 +60,7 @@ Installation of Quartus and ModelSIM
 `export PATH=/opt/sparc-elf/bin:$PATH`   
 11. Re-open your terminal and edit your binary vsim launch file (if you are unsure where this is located type `which vsim`)
 change `mode=${MTI_VCO_MODE:-""}` to `mode=${MTI_VCO_MODE:-"32"}` add `export LD_LIBRARY_PATH=${dir}/lib32` below `dir=dirname "$arg0"` change `vco="linux_rh60"` to `vco="linux"`
-12. You should now be able to launch `quartus` by typing quartus and ModelSIM can be launched with `vsim`  
+
 For simulations it is very handy to add the grlib library to your path as well:
 
  1. Download grlib here
