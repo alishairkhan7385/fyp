@@ -28,32 +28,32 @@ expat:i386 fontconfig:i386 libfreetype6:i386 libexpat1:i386 libc6:i386 libgtk-3-
 libcanberra0:i386 libpng12-0:i386 libice6:i386 libsm6:i386 libncurses5:i386 zlib1g:i386 \
 libx11-6:i386 libxau6:i386 libxdmcp6:i386 libxext6:i386 libxft2:i386 libxrender1:i386 \
 libxt6:i386 libxtst6:i386`  
-6. Download the freetype library [here]{http://download.savannah.gnu.org/releases/freetype/freetype-2.4.12.tar.bz2}
+6. Download the freetype library [here](http://download.savannah.gnu.org/releases/freetype/freetype-2.4.12.tar.bz2)  
 7. Unpack, build and copy to the appropriate directory.
 8. 
 `cd freetype-2.4.12
 ./configure --build=i686-pc-linux-gnu "CFLAGS=-m32" "CXXFLAGS=-m32" "LDFLAGS=-m32"
 make -j8
 mkdir modelsim_ase/lib32
-sudo cp freetype-2.4.12/objs/.libs/libfreetype.so* modelsim_ase/lib32`  
-13. Open .bashrc to add the binaries to your path:
-`nano ~/.bashrc`
+sudo cp freetype-2.4.12/objs/.libs/libfreetype.so* modelsim_ase/lib32`    
+9. Open .bashrc to add the binaries to your path:
+`nano ~/.bashrc`  
 14. Paste the following at the bottom, where you replace the ALTERAPATH to your quartus installation directory. Restart the terminal when you have saved the file.
 `# Quartus
-export ALTERAPATH="/path/to/quartus/"
-export ALTERAOCLSDKROOT="${ALTERAPATH}/hld"
-export QUARTUS_ROOTDIR=${ALTERAPATH}/quartus
-export QUARTUS_ROOTDIR_OVERRIDE="$QUARTUS_ROOTDIR"
-export PATH=$PATH:${ALTERAPATH}/quartus/bin
-export PATH=$PATH:${ALTERAPATH}/nios2eds/bin
-export PATH=$PATH:${QSYS_ROOTDIR}
-export QUARTUS_64BIT=1
-export QSYS_ROOTDIR="QUARTUS_ROOTDIR/sopc_builder/bin"
+export ALTERAPATH="/path/to/quartus/"  
+export ALTERAOCLSDKROOT="${ALTERAPATH}/hld"  
+export QUARTUS_ROOTDIR=${ALTERAPATH}/quartus  
+export QUARTUS_ROOTDIR_OVERRIDE="$QUARTUS_ROOTDIR"  
+export PATH=$PATH:${ALTERAPATH}/quartus/bin  
+export PATH=$PATH:${ALTERAPATH}/nios2eds/bin  
+export PATH=$PATH:${QSYS_ROOTDIR}  
+export QUARTUS_64BIT=1  
+export QSYS_ROOTDIR="QUARTUS_ROOTDIR/sopc_builder/bin"  
 
-# ModelSIM
-export PATH=$PATH:${ALTERAPATH}/modelsim_ase/bin
+# ModelSIM  
+export PATH=$PATH:${ALTERAPATH}/modelsim_ase/bin  
 # BCC
-export PATH=/opt/sparc-elf/bin:$PATH`
+export PATH=/opt/sparc-elf/bin:$PATH`  
 13. Re-open your terminal and edit your binary vsim launch file (if you are unsure where this is located type `which vsim`)
 change `mode=${MTI_VCO_MODE:-""}` to `mode=${MTI_VCO_MODE:-"32"}` add `export LD_LIBRARY_PATH=${dir}/lib32` below `dir=dirname "$arg0"` change `vco="linux_rh60"` to `vco="linux"`
 14. You should now be able to launch `quartus` by typing quartus and ModelSIM can be launched with `vsim`
