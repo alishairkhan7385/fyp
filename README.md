@@ -36,9 +36,9 @@ Installation of Quartus and ModelSIM
 `make -j8`  
 `mkdir modelsim_ase/lib32`  
 `sudo cp freetype-2.4.12/objs/.libs/libfreetype.so* modelsim_ase/lib32`  
-9. Open .bashrc to add the binaries to your path:  
+ 9. Open .bashrc to add the binaries to your path:  
 `nano ~/.bashrc`  
-10. Paste the following at the bottom, where you replace the ALTERAPATH to your quartus installation directory. Restart the terminal when you have saved the file.
+ 10. Paste the following at the bottom, where you replace the ALTERAPATH to your quartus installation directory. Restart the terminal when you have saved the file.  
 `export ALTERAPATH="/path/to/quartus/"`  
 `export ALTERAOCLSDKROOT="${ALTERAPATH}/hld"`  
 `export QUARTUS_ROOTDIR=${ALTERAPATH}/quartus`  
@@ -62,7 +62,8 @@ For simulations it is very handy to add the grlib library to your path as well:
  3. Paste the following at the bottom of that file, replace the path to your installation of the grlib library.
  `export GRLIB=/path/to/grlib`
 
-   
+## Installing Bare C compiler (BCC) for soft code compilation
+Download the zipped file from [gaisler](https://www.gaisler.com/anonftp/bcc/bin/linux/). copy the file to /opt/ execute `sudo tar xjf sparc-elf-GCCVERSION-RELEASE_VERSION.tar.gz`
 
 
 
