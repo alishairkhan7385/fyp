@@ -35,7 +35,7 @@ libxt6:i386 libxtst6:i386`
 ./configure --build=i686-pc-linux-gnu "CFLAGS=-m32" "CXXFLAGS=-m32" "LDFLAGS=-m32"  
 make -j8  
 mkdir modelsim_ase/lib32  
-sudo cp freetype-2.4.12/objs/.libs/libfreetype.so* modelsim_ase/lib32`      
+sudo cp freetype-2.4.12/objs/.libs/libfreetype.so* modelsim_ase/lib32`  
 9. Open .bashrc to add the binaries to your path:  
 `nano ~/.bashrc`  
 14. Paste the following at the bottom, where you replace the ALTERAPATH to your quartus installation directory. Restart the terminal when you have saved the file.
