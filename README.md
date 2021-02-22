@@ -103,8 +103,9 @@ printf("\n\n Hello LEON3 World!!!\n");
 10. Open terminal and execute `make soft`.  
 11. Run simulations again to see the c code ouput in the simulations by executing  
   `make install-altera`  
-  `make vsim-run`
+  `make vsim-run`  
 Output in my case
+![](input.png)
 
 
 
