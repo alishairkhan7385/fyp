@@ -82,7 +82,7 @@ Follow the instructions section 3 in grlib.pdf. It basically boils down to the f
 `make install-altera`  
 2. Execute `make xconfig` to give design configuration. Here click on `VHDL debugging` and check yes for `Accelerated UART tracing`. GO back to main menu and click `Save and Exit`.
 3. Execute `make vsim` you might get this error  
-  
+  ![](error.png)
 
 It means some VHDL packages are missing.  
 4. To add these packages go to (in my case) `/home/void/Downloads/xilinx/14.7/ISE_DS/ISE/vhdl/src/unisims` copy `unisim_VCOMP.vhd`, `unisim_VPKG.vhd` and all `.vhd` packages in the `primitive` folder to `/home/test/Downloads/grlib-gpl-2018.3-b4226/lib/techmap/unisim`  
