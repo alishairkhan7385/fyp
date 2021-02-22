@@ -1,0 +1,78 @@
+# vsim -i -quiet testbench 
+# Start time: 06:01:04 on Feb 22,2021
+# ** Warning: Design size of 212780 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/cpu/spw_txdp(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/cpu/spw_txdn(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/cpu/spw_txsp(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/cpu/spw_txsn(0) has no driver.
+# This port will contribute value (U) to the signal network.
+add wave -position insertpoint sim:/testbench/*
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# LEON3 GR-XC3S-1500 Demonstration design
+# GRLIB Version 2018.3.0, build 4226
+# Target technology: spartan3  , memory library: spartan3  
+# ahbctrl: AHB arbiter/multiplexer rev 1
+# ahbctrl: Common I/O area disabled
+# ahbctrl: AHB masters: 5, AHB slaves: 8
+# ahbctrl: Configuration area at 0xfffff000, 4 kbyte
+# ahbctrl: mst0: Cobham Gaisler          LEON3 SPARC V8 Processor        
+# ahbctrl: mst1: Cobham Gaisler          AHB Debug UART                  
+# ahbctrl: mst2: Cobham Gaisler          JTAG Debug Link                 
+# ahbctrl: mst3: Cobham Gaisler          SVGA frame buffer               
+# ahbctrl: mst4: Cobham Gaisler          GR Ethernet MAC                 
+# ahbctrl: slv0: European Space Agency   LEON2 Memory Controller         
+# ahbctrl:       memory at 0x00000000, size 512 Mbyte, cacheable, prefetch
+# ahbctrl:       memory at 0x20000000, size 512 Mbyte
+# ahbctrl:       memory at 0x40000000, size 1024 Mbyte, cacheable, prefetch
+# ahbctrl: slv1: Cobham Gaisler          AHB/APB Bridge                  
+# ahbctrl:       memory at 0x80000000, size 1 Mbyte
+# ahbctrl: slv2: Cobham Gaisler          LEON3 Debug Support Unit        
+# ahbctrl:       memory at 0x90000000, size 256 Mbyte
+# apbctrl: APB Bridge at 0x80000000 rev 1
+# apbctrl: slv0: European Space Agency   LEON2 Memory Controller         
+# apbctrl:       I/O ports at 0x80000000, size 256 byte 
+# apbctrl: slv1: Cobham Gaisler          Generic UART                    
+# apbctrl:       I/O ports at 0x80000100, size 256 byte 
+# apbctrl: slv2: Cobham Gaisler          Multi-processor Interrupt Ctrl. 
+# apbctrl:       I/O ports at 0x80000200, size 256 byte 
+# apbctrl: slv3: Cobham Gaisler          Modular Timer Unit              
+# apbctrl:       I/O ports at 0x80000300, size 256 byte 
+# apbctrl: slv4: Cobham Gaisler          PS2 interface                   
+# apbctrl:       I/O ports at 0x80000400, size 256 byte 
+# apbctrl: slv5: Cobham Gaisler          PS2 interface                   
+# apbctrl:       I/O ports at 0x80000500, size 256 byte 
+# apbctrl: slv6: Cobham Gaisler          SVGA frame buffer               
+# apbctrl:       I/O ports at 0x80000600, size 256 byte 
+# apbctrl: slv7: Cobham Gaisler          AHB Debug UART                  
+# apbctrl:       I/O ports at 0x80000700, size 256 byte 
+# apbctrl: slv8: Cobham Gaisler          General Purpose I/O port        
+# apbctrl:       I/O ports at 0x80000800, size 256 byte 
+# apbctrl: slv13: Cobham Gaisler          GR Ethernet MAC                 
+# apbctrl:       I/O ports at 0x80000d00, size 256 byte 
+# greth4: 10/100 Mbit Ethernet MAC rev 04, EDCL 1, buffer 2 kbyte 128 txfifo, irq 6
+# grgpio8: 18-bit GPIO Unit rev 3
+# svgactrl6: SVGA controller rev 0, FIFO length: 384, FIFO part length: 128, FIFO address bits: 9, AHB access size: 32 bits
+# apbps2_5: APB PS2 interface rev 2, irq 5
+# apbps2_4: APB PS2 interface rev 2, irq 4
+# gptimer3: Timer Unit rev 1, 8-bit scaler, 2 32-bit timers, irq 8
+# irqmp: Multi-processor Interrupt Controller rev 4, #cpu 1, eirq 0
+# apbuart1: Generic UART rev 1, fifo 4, irq 2, scaler bits 12
+# ahbjtag AHB Debug JTAG rev 1
+# ahbuart7: AHB Debug UART rev 0
+# dsu3_2: LEON3 Debug support unit + AHB Trace Buffer, 2 kbytes
+# leon3_0: LEON3 SPARC V8 processor rev 3: iuft: 0, fpft: 0, cacheft: 0
+# leon3_0: icache 2*4 kbyte, dcache 1*4 kbyte
+# clkgen_spartan3e: spartan3/e sdram/pci clock generator, version 1
+# clkgen_spartan3e: Frequency 50000 KHz, DCM divisor 4/5

@@ -1,0 +1,11 @@
+mkdir -p vcs
+mkdir -p vcs/grlib 
+mkdir -p vcs/unisim 
+mkdir -p vcs/techmap 
+mkdir -p vcs/spw 
+mkdir -p vcs/eth 
+mkdir -p vcs/opencores 
+mkdir -p vcs/gaisler 
+mkdir -p vcs/esa 
+mkdir -p vcs/micron 
+mkdir -p vcs/work 

@@ -1,0 +1,667 @@
+m255
+K4
+z0
+13
+cModel Technology
+Z0 d/home/void/Downloads/grlib-gpl-2018.3-b4226/designs/leon3-gr-xc3s-1500
+Ecan_acf
+Z1 w1538389547
+Z2 DPx5 grlib 7 version 0 22 1?3<01CD=b2caJgb^>leP0
+Z3 DPx5 grlib 6 stdlib 0 22 Nmzh;>NU]Khg2:>`4GN<Y1
+Z4 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z7 8../../lib/opencores/can/can_top.vhd
+Z8 F../../lib/opencores/can/can_top.vhd
+l0
+L115
+VW2hmm6nfHGMlzko>DH1:o2
+!s100 nUW:4j3ZI[j8<N^zYUWTe3
+Z9 OV;C;10.5b;63
+31
+Z10 !s110 1613528650
+!i10b 1
+Z11 !s108 1613528650.000000
+Z12 !s90 -quiet|-explicit|-93|-work|opencores|../../lib/opencores/can/can_top.vhd|
+Z13 !s107 ../../lib/opencores/can/can_top.vhd|
+!i113 1
+Z14 o-quiet -explicit -93 -work opencores
+Z15 tShow_source 1 Show_Warning1 0 Show_Warning5 0 Explicit 1 Quiet 1 CvgOpt 0
+Artl
+R2
+R3
+R4
+R5
+R6
+DEx4 work 7 can_acf 0 22 W2hmm6nfHGMlzko>DH1:o2
+l154
+L144
+Vl[GSeBcgATaaKF3M5;_Sl0
+!s100 [oHHk5DdEz52VRB`n?2d?1
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Ecan_bsp
+R1
+R2
+R3
+R4
+R5
+R6
+R0
+R7
+R8
+l0
+L1821
+VM[?8QA>hE`5^>^Pj_M[lX3
+!s100 ?M@ho0=CZj@oD>X8Z8OHm0
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Artl
+R2
+R3
+R4
+R5
+R6
+DEx4 work 7 can_bsp 0 22 M[?8QA>hE`5^>^Pj_M[lX3
+l2259
+L1939
+VHIHP?kn_WeEdDijVoWC2e0
+!s100 mAl7:IHna?]NC2AGciLSQ3
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Ecan_btl
+R1
+R2
+R3
+R4
+R5
+R6
+R0
+R7
+R8
+l0
+L458
+Vl9Qi<[X0bIQ7118^PFzJ92
+!s100 eb;8i=QNjX:kAMY]:QjTd3
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Artl
+R2
+R3
+R4
+R5
+R6
+DEx4 work 7 can_btl 0 22 l9Qi<[X0bIQ7118^PFzJ92
+l524
+L491
+VgTfBCPmzRRbHjfXl=DB8h0
+!s100 BV:HdkNT9C<^Qm:@P5MGL2
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Ecan_crc
+R1
+R2
+R3
+R4
+R5
+R6
+R0
+R7
+R8
+l0
+L1414
+VJfPAken_ke^XGQNHl2>OH1
+!s100 ]]N1Ndj1I1lW?h<BGT7ST3
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Artl
+R2
+R3
+R4
+R5
+R6
+DEx4 work 7 can_crc 0 22 JfPAken_ke^XGQNHl2>OH1
+l1431
+L1423
+Vd<^lPXRYmd>zYz2Emm?`X1
+!s100 DW9?o8mNfOc0<_Oei1zmB3
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Ecan_fifo
+R1
+R2
+R3
+R4
+R5
+R6
+R0
+R7
+R8
+l0
+L964
+Ve<ZB`PUgZ7YJD7^G?heT[2
+!s100 14QL<^8O2kn>VZBYbFeh<2
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Artl
+R2
+R3
+R4
+R5
+R6
+DEx4 work 8 can_fifo 0 22 e<ZB`PUgZ7YJD7^G?heT[2
+l1043
+L1002
+Vg@<52eicM8Rm@J:^DZW201
+!s100 0nhILO>7<??@^;L52m2dF0
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Ecan_ibo
+R1
+R5
+R6
+R0
+R7
+R8
+l0
+L1541
+V2g0N@H8:UKLU37oMm1PM62
+!s100 SE5MICQi]OZ^PehOBeh@V0
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Artl
+R5
+R6
+DEx4 work 7 can_ibo 0 22 2g0N@H8:UKLU37oMm1PM62
+l1556
+L1547
+Vl;H7F44i=25^KUieie@bR3
+!s100 0YLlXOThocz:5^8ziVTM?2
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Ecan_register
+R1
+R5
+R6
+R0
+R7
+R8
+l0
+L4307
+VD8;AUS1jY@CSQW=e62Qg>0
+!s100 85zW@aVPRMA_V0WMMcA?:0
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Artl
+R5
+R6
+DEx4 work 12 can_register 0 22 D8;AUS1jY@CSQW=e62Qg>0
+l4326
+L4317
+VB6`ie?9NQgcVKk?W9LSFL3
+!s100 Vf@]9]PX`WR02oU_]SM;R1
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Ecan_register_asyn
+R1
+R2
+R3
+R4
+R5
+R6
+R0
+R7
+R8
+l0
+L4440
+VclTQ00B_R_jkEc;PRhJZa1
+!s100 6zZfZJ3YndABR<U1N0;GI3
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Artl
+R2
+R3
+R4
+R5
+R6
+DEx4 work 17 can_register_asyn 0 22 clTQ00B_R_jkEc;PRhJZa1
+l4461
+L4452
+VaUB5>oS`9^;bdoKA8Z07@1
+!s100 YY8RSSgU0]lcg_nZXGU042
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Ecan_register_asyn_syn
+R1
+R2
+R4
+R3
+R5
+R6
+R0
+R7
+R8
+l0
+L4577
+V:77i_W3IN_m5OHGJUd<n13
+!s100 2[3K`L5L_CE2IKg=4kmf>3
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Artl
+R2
+R4
+R3
+R5
+R6
+DEx4 work 21 can_register_asyn_syn 0 22 :77i_W3IN_m5OHGJUd<n13
+l4599
+L4590
+Vmog=4MSk3W9Cf@R_e5f7O1
+!s100 M[zT9]PIJml672JSR6Bn;0
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Ecan_register_syn
+R1
+R2
+R4
+R3
+R5
+R6
+R0
+R7
+R8
+l0
+L4716
+VRIIo<gO?1aVoS;Wk;4CcJ0
+!s100 Y8X8cQ:gl9HFHJEOYb[Sa3
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Artl
+R2
+R4
+R3
+R5
+R6
+DEx4 work 16 can_register_syn 0 22 RIIo<gO?1aVoS;Wk;4CcJ0
+l4737
+L4728
+VfhZNP^SgKj7lOGPB]=D]00
+!s100 O?c5@P`WbLWmEN<HL;ZQK2
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Ecan_registers
+R1
+R2
+R3
+R4
+R5
+R6
+R0
+R7
+R8
+l0
+L4951
+ViBH0nJESL3]bFGCL3IM^G2
+!s100 UA>j;jh=j@O4F6GY[a7nE3
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Artl
+R2
+R3
+R4
+R5
+R6
+DEx4 work 13 can_registers 0 22 iBH0nJESL3]bFGCL3IM^G2
+l5272
+L5045
+VoeYHZ;UY;TWKkLmPQMBz70
+!s100 RVAKCAd<AH7a]iZ>e?CP;3
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Ecan_top
+R1
+R2
+R4
+R3
+R5
+R6
+R0
+R7
+R8
+l0
+L6441
+VKYL;GkICXHR52QFXc?@913
+!s100 V6BoQ=R`4zXVclaDhK;g>0
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Artl
+R2
+R4
+R3
+R5
+R6
+DEx4 work 7 can_top 0 22 KYL;GkICXHR52QFXc?@913
+l6868
+L6487
+VKijg^mIRQ@2^YU8Y25S=Z2
+!s100 kOXI2ajc0hF<m;PX<UdTl3
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Pcancomp
+R5
+R6
+R1
+R0
+8../../lib/opencores/can/cancomp.vhd
+F../../lib/opencores/can/cancomp.vhd
+l0
+L22
+VG[CWg9<JfN6:AD9jjoW0A2
+!s100 6S?nA=B_OleVcC9fQigBN2
+R9
+31
+R10
+!i10b 1
+R11
+!s90 -quiet|-explicit|-93|-work|opencores|../../lib/opencores/can/cancomp.vhd|
+!s107 ../../lib/opencores/can/cancomp.vhd|
+!i113 1
+R14
+R15
+Ei2c_master_bit_ctrl
+R1
+R2
+R4
+R3
+R5
+R6
+R0
+Z16 8../../lib/opencores/i2c/i2c_master_bit_ctrl.vhd
+Z17 F../../lib/opencores/i2c/i2c_master_bit_ctrl.vhd
+l0
+L174
+V[A0WXP;V0EZcP>JjQ=k?g3
+!s100 oFnORbNBPUZQL3ISUIP[>3
+R9
+31
+R10
+!i10b 1
+R11
+Z18 !s90 -quiet|-explicit|-93|-work|opencores|../../lib/opencores/i2c/i2c_master_bit_ctrl.vhd|
+Z19 !s107 ../../lib/opencores/i2c/i2c_master_bit_ctrl.vhd|
+!i113 1
+R14
+R15
+Astructural
+R2
+R4
+R3
+R5
+R6
+DEx4 work 19 i2c_master_bit_ctrl 0 22 [A0WXP;V0EZcP>JjQ=k?g3
+l223
+L204
+VSLfDm@o_BG_egcAQEoo?Z0
+!s100 LXIzaBi^Czk3dfJ_`7l;b1
+R9
+31
+R10
+!i10b 1
+R11
+R18
+R19
+!i113 1
+R14
+R15
+Ei2c_master_byte_ctrl
+R1
+R2
+R4
+R3
+R5
+R6
+R0
+Z20 8../../lib/opencores/i2c/i2c_master_byte_ctrl.vhd
+Z21 F../../lib/opencores/i2c/i2c_master_byte_ctrl.vhd
+l0
+L83
+V7`0cE_Vdgl0`c1dP`:?NB0
+!s100 =Z;iAUkn:UDAClz;L`hO71
+R9
+31
+R10
+!i10b 1
+R11
+Z22 !s90 -quiet|-explicit|-93|-work|opencores|../../lib/opencores/i2c/i2c_master_byte_ctrl.vhd|
+Z23 !s107 ../../lib/opencores/i2c/i2c_master_byte_ctrl.vhd|
+!i113 1
+R14
+R15
+Astructural
+R2
+R4
+R3
+R5
+R6
+DEx4 work 20 i2c_master_byte_ctrl 0 22 7`0cE_Vdgl0`c1dP`:?NB0
+l179
+L119
+VlPER=X7XF6P5c<?<S3=Jk0
+!s100 U:hn[K2>;`4Y<0Dz@DHH?3
+R9
+31
+R10
+!i10b 1
+R11
+R22
+R23
+!i113 1
+R14
+R15
+Pi2coc
+R4
+R5
+R6
+R1
+R0
+8../../lib/opencores/i2c/i2coc.vhd
+F../../lib/opencores/i2c/i2coc.vhd
+l0
+L33
+Vl^7fGXjm52WlXCTmz8;dA1
+!s100 0W?H__07REakbn4AX2jFb2
+R9
+31
+R10
+!i10b 1
+R11
+!s90 -quiet|-explicit|-93|-work|opencores|../../lib/opencores/i2c/i2coc.vhd|
+!s107 ../../lib/opencores/i2c/i2coc.vhd|
+!i113 1
+R14
+R15

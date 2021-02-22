@@ -1,0 +1,94 @@
+m255
+K4
+z0
+13
+cModel Technology
+Z0 d/home/void/Downloads/grlib-gpl-2018.3-b4226/designs/leon3-gr-xc3s-1500
+Emctrl
+Z1 w1538389548
+Z2 DPx3 esa 10 memoryctrl 0 22 JN5XB7ldzZL2d3Y6S8B8W3
+Z3 DPx7 techmap 7 gencomp 0 22 G1GGeM5i]=9hVGkZ];[El2
+Z4 DPx7 gaisler 7 memctrl 0 22 I0<LCDkRAbfLnJ2nC7o763
+Z5 DPx5 grlib 7 devices 0 22 eLFfc3P>k[UQT39;9@T<C2
+Z6 DPx5 grlib 7 version 0 22 1?3<01CD=b2caJgb^>leP0
+Z7 DPx5 grlib 6 stdlib 0 22 Nmzh;>NU]Khg2:>`4GN<Y1
+Z8 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z9 DPx5 grlib 4 amba 0 22 jYkodV[^OkcD_zU[;b?H`2
+Z10 DPx5 grlib 6 config 0 22 mU@XB4QJDA8S8aXe:X@gg0
+Z11 DPx5 grlib 12 config_types 0 22 QMQL^bLnQ6oD2]YMaNK6W2
+Z12 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z13 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z14 8../../lib/esa/memoryctrl/mctrl.vhd
+Z15 F../../lib/esa/memoryctrl/mctrl.vhd
+l0
+L39
+VgF43O9kkUBF_Co`N70j4:0
+!s100 421M[7X_FhZW4_]YnM<:n1
+Z16 OV;C;10.5b;63
+31
+Z17 !s110 1613528661
+!i10b 1
+Z18 !s108 1613528661.000000
+Z19 !s90 -quiet|-explicit|-93|-work|esa|../../lib/esa/memoryctrl/mctrl.vhd|
+Z20 !s107 ../../lib/esa/memoryctrl/mctrl.vhd|
+!i113 1
+Z21 o-quiet -explicit -93 -work esa
+Z22 tShow_source 1 Show_Warning1 0 Show_Warning5 0 Explicit 1 Quiet 1 CvgOpt 0
+Artl
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+R11
+R12
+R13
+DEx4 work 5 mctrl 0 22 gF43O9kkUBF_Co`N70j4:0
+l270
+L83
+V9fnZ1>=9j8]RU2cES;HKC2
+!s100 l_Z<4m<k<8B9z1MWXPM`j0
+R16
+31
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R21
+R22
+Pmemoryctrl
+R3
+R4
+R6
+R7
+R10
+R11
+R8
+R9
+R12
+R13
+R1
+R0
+8../../lib/esa/memoryctrl/memoryctrl.vhd
+F../../lib/esa/memoryctrl/memoryctrl.vhd
+l0
+L34
+VJN5XB7ldzZL2d3Y6S8B8W3
+!s100 b9l[aZz@zz]z8MmO@gLMX3
+R16
+31
+R17
+!i10b 1
+R18
+!s90 -quiet|-explicit|-93|-work|esa|../../lib/esa/memoryctrl/memoryctrl.vhd|
+!s107 ../../lib/esa/memoryctrl/memoryctrl.vhd|
+!i113 1
+R21
+R22

@@ -1,0 +1,14 @@
+
+grlib : vcs/grlib
+unisim : vcs/unisim
+techmap : vcs/techmap
+spw : vcs/spw
+eth : vcs/eth
+opencores : vcs/opencores
+gaisler : vcs/gaisler
+esa : vcs/esa
+micron : vcs/micron
+work : vcs/work
+WORK > work
+timebase = ps
+
