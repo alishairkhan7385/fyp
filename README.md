@@ -105,7 +105,7 @@ printf("\n\n Hello LEON3 World!!!\n");
   `make install-altera`  
   `make vsim-run`  
 Output in my case
-![](input.png)
+![](output.png)
 
 
 
