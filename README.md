@@ -108,7 +108,6 @@ Output in my case
 ![](output.png)
 
 
-
-GRLIB user guide https://www.gaisler.com/products/grlib/grlib.pdf
-Cygwin environment info
-http://www.es.ele.tue.nl/~ljozwiak/education/5JJ70p/blocks/1/cygwin.html
+##References
+ https://www.gaisler.com/products/grlib/grlib.pdf  
+ https://github.com/rzonnie/Leon3
